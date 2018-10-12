@@ -3,9 +3,9 @@ class Artist
   @@all = []
 
   def self.all
-    @@all 
+    @@all
   end
-  
+
   def initialize(name)
     @name = name
   end
@@ -14,8 +14,7 @@ class Artist
     self.all.detect {|a| a.name == artist_name} || self.new(artist_name)
   end
 
-  def self.find_by_name(name)
-    self.all.detect {|a| a.name == name}
-    
+
+
 
 end
